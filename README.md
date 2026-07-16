@@ -128,3 +128,65 @@ OPENAI_API_KEY=your_openai_api_key_here
 Bash
 uvicorn api.app:app --reload
 The API will be live at http://localhost:8000.
+
+
+## 📡 API Usage Example
+Endpoint: POST /segment-and-position
+
+Request Payload (JSON):
+
+JSON
+{
+  "age": 32,
+  "income_lpa": 8.2,
+  "family_size": 3,
+  "city_tier": "Tier1",
+  "primary_channel": "Online",
+  "snacks_spend": 2100,
+  "beverages_spend": 1500,
+  "household_spend": 3400,
+  "personalcare_spend": 2500,
+  "promo_user": "Yes",
+  "organic_buyer": "No"
+}
+Response Payload (JSON):
+
+JSON
+{
+  "assigned_segment": "Cluster profile: Age: 32, Income: 8.2LPA, Family: 3, City: Tier1, Channel: Online, Snacks_Spend: 2100, Organic: No. This segment typically shops via Online in Tier1 cities.",
+  
+  "retrieved_campaign_context": "CAMPAIGN_ID: CPG003... Gen-Z Digital Natives... Ready-to-Eat (RTE) & Functional Drinks... 22% CTR, 6.0% Conversion.",
+  
+  "positioning_and_copy": "**Positioning Strategy (AIDA):**\n- Attention: 'Midnight cravings? Don't cook!' \n- Interest: 'Our new Korean BBQ noodles are 2-min magic.'\n- Desire: 'Zero guilt, probiotic soda included.'\n- Action: 'Order now on Swiggy Instamart.'\n\n**Headlines:**\n1. 'Ruko mat, Khao!' \n2. '10-Minute Delivery, Michelin Vibes.' \n3. 'The Ultimate Work-From-Home Binge Pack.'"
+}
+
+## 🐳 Docker Deployment
+To build and run the application inside an isolated container environment:
+
+Build the Docker image:
+
+Bash
+docker build -t fmcg-genai-engine .
+Run the container:
+
+Bash
+docker run -p 8000:8000 --env-file .env fmcg-genai-engine
+The API will immediately become available at http://localhost:8000.
+
+## 📁 Project Structure
+Plaintext
+fmcg-genai-engine/
+├── data/
+│   ├── fmcg_customers.csv       # 50 synthetic FMCG consumer records
+│   └── historical_campaigns.txt # 6 CPG campaigns for RAG retrieval
+├── src/
+│   ├── generate_embeddings.py   # FAISS index builder
+│   ├── rag_retriever.py         # LangChain vector store integration
+│   └── segment_pipeline.py      # Clustering and segmentation logic
+├── api/
+│   └── app.py                   # FastAPI server endpoints
+├── requirements.txt             # Python project dependencies
+├── Dockerfile                   # Containerization configuration
+├── .env.example                 # Environment variables template
+└── README.md                    # You are here!
+
