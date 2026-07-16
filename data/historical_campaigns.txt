@@ -1,0 +1,41 @@
+CAMPAIGN_ID: CPG001
+Segment: Premium Urban Elites (Metro, Income >15L)
+Goal: Premium Imported Snacks & Artisanal Beverages
+Strategy: Exclusivity
+Content: "Elevate your tea-time. Artisanal Belgian cookies paired with single-origin cold brew. Crafted for the discerning palate. Available on premium e-grocery."
+Performance: 11% CTR, 4.2% Conversion.
+
+CAMPAIGN_ID: CPG002
+Segment: Large Family Value Hunters (Family Size >3, Mid-income)
+Goal: Bulk staple bundles (Rice, Oil, Detergents)
+Strategy: Bulk Discounts
+Content: "Feed the tribe without burning a hole. Super-saver packs give 20% more for the same price. Trusted by 1M Indian mothers."
+Performance: 15% CTR, 8.5% Conversion.
+
+CAMPAIGN_ID: CPG003
+Segment: Gen-Z Digital Natives (18-25, High online presence)
+Goal: Ready-to-Eat (RTE) & Functional Drinks
+Strategy: Convenience & Hype
+Content: "Hunger pangs? Crack open our new Korean BBQ noodles and probiotic sodas. Zero guilt, max flavor. Delivery in 10 mins."
+Performance: 22% CTR, 6.0% Conversion.
+
+CAMPAIGN_ID: CPG004
+Segment: Health-Conscious Homemakers (35-50, High organic spend)
+Goal: Organic Staples (Atta, Honey, Cold-Pressed Oils)
+Strategy: Purity & Trust
+Content: "Your family deserves chemical-free. Cold-pressed oils retain 90% nutrients. Certified organic, traceable farm-to-table."
+Performance: 9% CTR, 5.5% Conversion.
+
+CAMPAIGN_ID: CPG005
+Segment: Kirana Store Loyalists (Tier2/Tier3, Low digital)
+Goal: Sachet & Low-Unit-Pack (LUP) products
+Strategy: Affordability
+Content: "Shampoo khatam? Chinta mat karo! Naya chhotu pack - sirf 5 rupaye. Har kirana dukaan par available."
+Performance: 18% CTR, 12% Conversion.
+
+CAMPAIGN_ID: CPG006
+Segment: Corporate Gifting (Bulk buyers)
+Goal: Premium Health & Wellness Hampers
+Strategy: Professionalism
+Content: "Invest in your team's health. Curated hampers with dry fruits, immunity boosters. Customizable for corporate budgets."
+Performance: 7% CTR, 2.5% Conversion.
