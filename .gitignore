@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables (Sensitive)
+.env
+*.env
+
+# Model artifacts (large files)
+models/
+*.faiss
+*.pkl
+*.onnx
+
+# Data files (if generated)
+*.csv
+*.xlsx
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Docker
+*.pid
+*.pid.lock
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Uploads / Downloads
+uploads/
+downloads/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# pytest
+.pytest_cache/
